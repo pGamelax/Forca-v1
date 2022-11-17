@@ -1,0 +1,222 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-color: #3D3642;
+    color: #fafaff;
+    display: flex;
+    flex-direction: column;
+    font-family: Mitr,sans-serif;
+    font-weight: 600;
+    height: 100px;  
+    width: 100%;
+}
+:grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1em);
+    grid-gap: 0.0625em;
+    font-size: 1em;
+    margin: 0;
+    line-height: 0;
+}
+.grid{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: (auto fill, 1rem);
+    
+}
+.container{
+    width: 1140px;
+    height: max-content;
+    text-align: center;
+}
+input{
+    border: none;
+}
+.input-text{
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;   
+    border-radius: 10%;
+    text-transform: uppercase;
+    color: transparent;
+    border: 0.25rem solid #312D38 ;
+    background-color: #3D3642;
+    line-height: 1em;
+    font-weight: bold;
+    text-shadow: 0 0 0 #FAFAFF;
+}
+.input-text:focus{
+    box-sizing: border-box;
+    border: 0.25rem solid #2A252B ;
+    border-bottom: 0.40rem solid #2A252B;
+    outline: 0;
+}
+
+.letra-certa{
+    pointer-events: none;
+    background-color:#08A685;
+    border: none;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 0 #FAFAFF;
+}
+
+.letra-errada{
+    pointer-events: none;
+    background-color: rgb(225, 54, 54);
+    color: transparent;
+    border: none;
+    font-weight: bold;
+    text-shadow: 0 0 0 #FAFAFF;
+}
+
+.letra-exist{
+    pointer-events: none;
+    background-color: #FFBF05;
+    color: transparent;
+    border: none;
+    font-weight: bold;
+    text-shadow: 0 0 0 #FAFAFF;
+}
+#txtPergunta{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    text-transform: uppercase;
+
+}
+.card{
+    width: 450px;
+    height: 80px;
+    background-color: #3D3642 ;
+    border: 0.25rem solid #312D38 ;
+    border-radius: 10%;
+}
+.alert-danger{
+    background-color: rgb(226, 119, 119);
+    border-color: rgb(226, 51, 51);
+}
+.ganhou{
+    position: absolute !important;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 300px;
+    background-color: #312D38;
+}
+.none{  
+    display: none;
+}
+.teclado{
+    top: 100%;
+}
+.letra{
+    position: relative;
+    display: flex;
+    flex-direction: row ;
+}
+.letra button{
+    text-align: center;
+    background-color: #312D38;
+    border: none;
+    margin: 2px;
+    width: 40px;
+    height: 50px;
+    font-weight: bold;
+    color: #FAFAFF;
+    border-radius: 5px;
+}
+.letra #enter{
+    text-align: center;
+    background-color: #312D38;
+    border: none;
+    margin: 2px;
+    width: 80px;
+    height: 50px;
+    color: #FAFAFF;
+    border-radius: 5px;
+}
+#enter P{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.letra #clear{
+    text-align: center;
+    background-color: #312D38;
+    border: none;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    color: #FAFAFF;
+    border-radius: 5px;
+}
+#clear p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.m-2{
+    margin-top: 0.2rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 1.0rem !important;
+    margin-right: 0rem !important;
+}
+.m-3{
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 1rem !important;
+    margin-right: 0rem !important;
+}
+.m-5{
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 3rem !important;
+    margin-right: 0rem !important;
+}
+
+.main-amostra{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.amostra{
+    left: 0px;
+    display: grid;
+    position: relatives;
+    grid-template: 
+    'amostra-quad text-amostra'
+    'amostra-quad text-amostra'
+    'amostra-quad text-amostra';
+}
+.amostra input{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.amostra-body{
+    position: relative;
+    grid-area: amostra-quad;
+    margin-top: 1.0rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+.text-amostra{
+    position: relative;
+    grid-area: text-amostra;
+    width: 300px;
+    top: 50%;
+    left: 10px;
+}
